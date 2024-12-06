@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.wrapper{
+    width: 100dvw;
+    height: 100svh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.car{
+    /* transform: translateY(8%); */
+    width: 55%;
+    opacity: 0;
+    animation: fade-in 2s forwards ease;
+    animation-delay:1.5s;
+}
+.watch{
+        width: 30%;
+}
+.baby{
+    width: 50%;
+}
+.vey{
+    width: 40%;
+    transform: translateY(-10%);
+}
+h2{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 30px;
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+/* navbar */
+.navbar{
+    height: 100vh;
+    width: 10vw;
+    position: absolute;
+    align-content: center;
+    right: 0;
+    /* background-color: red; */
+}
+.tiles{
+    /* background-color: magenta; */
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    z-index: 10;
+}
+.diamond{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(196, 196, 196, 0.281);
+    /* border: 1px solid rgba(255, 255, 255, 0.349); */
+    /* box-shadow: 
+        inset 0px 0px 2px 2px rgba(192, 0, 90, 0.027),
+        inset 0px 0px 4px 4px rgba(0, 0, 255, 0.041); */
+    rotate: 45deg;
+    position: relative;
+    right: -150px;
+    transition: ease-out;
+}
+.tiles .d1{
+    animation: navanim 0.7s forwards;
+}
+.tiles .d2{
+    animation: navanim 0.75s forwards;
+    animation-delay: 0.28s;
+    
+}
+.tiles .d3{
+    animation: navanim 0.75s forwards;
+    animation-delay: 0.5s;
+
+}
+.tiles .d4{
+    animation: navanim 0.75s forwards;
+    animation-delay: 0.7s;
+
+}
+@keyframes navanim {
+    from{
+        right: -150px;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.diamond-inner{
+    rotate: -45deg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+span{
+    font-family: "Sansita", sans-serif;
+    font-style: normal;
+    font-size: .8rem;
+}
+
+.di1:hover::before,
+.di2:hover::before,
+.di3:hover::before,
+.di4:hover::before,
+.di5:hover::before,
+.di6:hover::before,
+.di7:hover::before,
+.di8:hover::before,
+.di9:hover::before,
+.di10:hover::before,
+.di11:hover::before,
+.di12:hover::before,
+.di13:hover::before,
+.di14:hover::before,
+.di15:hover::before,
+.di16:hover::before,
+.di17:hover::before,
+.di18:hover::before,
+.di19:hover::before,
+.di20:hover::before{
+    content: 'Around\A 420 km/h (261 mph)';
+    white-space: pre;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+    background-color: rgba(196, 196, 196, 0.281);
+    transform: translateX(-80%);
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    animation: explain-anim .8s forwards;
+
+}
+.di2:hover::before{
+    content: 'W16 turbocharged \A engine';
+    white-space: pre;
+    text-align: center;
+}
+.di3:hover::before{
+    content: 'Around\A 22.5 L/100 km';
+    white-space: pre;
+    text-align: center;
+}
+.di4:hover::before{
+    content: 'Michelin Sport Cup\A 2 R tires';
+    white-space: pre;
+    text-align: center;
+}
+.di5:hover::before{
+    content: 'Titanium \A 18k white gold';
+    white-space: pre;
+    text-align: center;
+}
+.di6:hover::before{
+    content: 'Long Lasting \A 80 hours ';
+    white-space: pre;
+    text-align: center;
+}
+.di7:hover::before{
+    content: 'Suitable for \A 30 meters depth';
+    white-space: pre;
+    text-align: center;
+}
+.di8:hover::before{
+    content: 'High-quality \A  leather Straps';
+    white-space: pre;
+    text-align: center;
+}
+.di9:hover::before{
+    content: 'Around \A 45 km/h (28 mph)';
+    white-space: pre;
+    text-align: center;
+}
+.di10:hover::before{
+    content: 'Electric motor';
+    white-space: pre;
+    text-align: center;
+}
+.di11:hover::before{
+    content: 'lithium-ion battery \A 1.4 kWh ';
+    white-space: pre;
+    text-align: center;
+}
+.di12:hover::before{
+    content: 'Set of \A 2 seats';
+    white-space: pre;
+    text-align: center;
+}
+.di13:hover::before{
+    content: 'Around \A 407 km/h (253 mph)';
+    white-space: pre;
+    text-align: center;
+}
+.di14:hover::before{
+    content: 'Quad-turbocharged \A W16 engine';
+    white-space: pre;
+    text-align: center;
+}
+.di15:hover::before{
+    content: 'unleaded gasoline \A 100 liters ';
+    white-space: pre;
+    text-align: center;
+}
+.di16:hover::before{
+    content: '265/730 ZR20 (F) \A 365/710 ZR21 (R)';
+    white-space: pre;
+    text-align: center;
+}
+.di17:hover::before{
+    content: 'Around \A 	380 km/h (236 mph)';
+    white-space: pre;
+    text-align: center;
+}
+.di18:hover::before{
+    content: 'Quad-turbocharged \A W16 engine';
+    white-space: pre;
+    text-align: center;
+}
+.di19:hover::before{
+    content: 'unleaded gasoline \A 100 liters ';
+    white-space: pre;
+    text-align: center;
+}
+.di20:hover::before{
+    content: 'Michelin Pilot \A Sport Cup 2 tires';
+    white-space: pre;
+    text-align: center;
+}
+@keyframes explain-anim {
+    from{
+        width: 0;
+        opacity: 0;
+    }
+    to{
+        width: 210px;
+        opacity: 1;
+    }
+}
+.menu{
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.096);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.menubar{
+    width: 50px;
+    height: 0px;
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+    background-color: rgba(255, 255, 255, 0.096);
+    visibility: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input[type="checkbox"]{
+    visibility: hidden;
+}
+input[type="checkbox"]:checked ~ .menubar {
+    visibility: visible;
+    animation: menubar-anim-forward 1s forwards;
+}
+input[type="checkbox"]:not(:checked) ~ .menubar {
+    visibility: visible;
+    animation: menubar-anim-back 1s forwards;
+}
+input[type="checkbox"]:checked ~ .menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@keyframes menubar-anim-forward {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 230px;
+    }
+}
+@keyframes menubar-anim-back {
+    from{
+        height: 230px;
+    }
+    to{
+        height: 0px;
+        padding: 0 0;
+    }
+}
+
+.chiron,
+.viron,
+.divo,
+.watches,
+.babycars{
+    background: rgba(255, 255, 255, 0.733);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    cursor: pointer;
+}
+.chiron:hover,
+.viron:hover,
+.divo:hover,
+.watches:hover,
+.babycars:hover{
+    background: rgba(255, 255, 255, 0.452);
+    
+}
