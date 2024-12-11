@@ -8,7 +8,7 @@ body{
 .wrapper{
     width: 100dvw;
     height: 100svh;
-    background-color: black;
+    background: url(../img/shiny-blank-clean-stage-room-background.jpg) center center/cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
